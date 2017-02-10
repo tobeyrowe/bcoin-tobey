@@ -1,5 +1,3 @@
-# REST/RPC
-
 The default bcoin HTTP server listens on the standard RPC port (8332 for main).
 It exposes a REST json api, as well as a JSON-RPC api.
 
