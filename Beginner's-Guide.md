@@ -140,9 +140,8 @@ Note: Selfish mode is not recommended. We encourage you to _help_ the network by
 
 ## Further Configuration
 
-## Configuration
-
-## Using the Wallet
+See [Configuration][configuration].
 
 [keybase]: https://keybase.io/chjj#show-public
 [node]: https://nodejs.org/dist/v7.5.0/
+[configuration]: https://github.com/bcoin-org/bcoin/wiki/Configuration
