@@ -1,5 +1,3 @@
-# Beginner's Guide
-
 ## Introduction
 
 Bcoin is an _alternative_ implementation of the bitcoin protocol, written in node.js. It is a full node which can be used for full blockchain validation and is aware of all known consensus rules.
