@@ -20,6 +20,50 @@ $ echo 'api-key: hunter2' > ~/cli.conf
 $ bcoin cli info --config=~/cli.conf
 ```
 
+## Examples
+
+``` bash
+$ export BCOIN_API_KEY=your-api-key
+
+# View the genesis block
+$ bcoin cli block 0
+
+# View the mempool
+$ bcoin cli mempool
+
+# View primary wallet
+$ bcoin wallet get
+
+# View transaction history
+$ bcoin wallet history
+
+# Send a transaction
+$ bcoin wallet send [address] 0.01
+
+# View balance
+$ bcoin wallet balance
+
+# Derive new address
+$ bcoin wallet address
+
+# Create a new account
+$ bcoin wallet account create foo
+
+# Send from account
+$ bcoin wallet send [address] 0.01 --account=foo
+```
+
+RPC examples:
+
+``` bash
+$ bcoin rpc getblockchaininfo
+$ bcoin rpc getwalletinfo
+$ bcoin rpc getpeerinfo
+$ bcoin rpc getbalance
+$ bcoin rpc listtransactions
+$ bcoin rpc sendtoaddress [address] 0.01
+```
+
 ## Commands
 
 bcoin-cli commands are split into 3 categories: cli, rpc, and wallet.
