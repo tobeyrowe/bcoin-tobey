@@ -29,8 +29,10 @@ node.open().then(function() {
 }).then(function(wallet) {
   console.log('Created wallet with address: %s', wallet.getAddress('base58'));
 
-  // Start syncing the blockchain
-  node.startSync();
+  node.connect().then(function() {
+    // Start syncing the blockchain
+    node.startSync();
+  });
 
   // Wait for balance and send it to a new address.
   wallet.once('balance', function(balance) {
