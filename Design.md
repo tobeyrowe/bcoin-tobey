@@ -25,7 +25,7 @@ utilize bcoin for many use cases.
 ### Performance
 
 Non-javscript people reading this may think using javascript isn't a wise
-descision.
+decision.
 
 #### Javascript
 
