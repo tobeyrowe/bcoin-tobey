@@ -51,6 +51,7 @@ Note that certain chain options affect the format and indexing of the chain data
 
 - `mempool-size`: Max mempool size in MB (default: 100).
 - `replace-by-fee`: Allow replace-by-fee transactions (default: false).
+- `persistent-mempool`: Save mempool to disk and read into memory on boot (default: false).
 
 ## Pool Options
 
@@ -75,7 +76,10 @@ Note that certain chain options affect the format and indexing of the chain data
 ## Miner Options
 
 - `coinbase-flags`: Coinbase flags (default: mined by bcoin).
-- `payout-address`: List of payout addresses (comma-separated).
+- `payout-address`: List of payout addresses, randomly selected during block creation (comma-separated).
+- `max-block-weight`: Max block weight to mine (default: 4000000).
+- `reserved-block-weight`: Amount of space reserved for coinbase (default: 4000).
+- `reserved-block-sigops`: Amount of sigops reserved for coinbase (default: 400).
 
 ## HTTP
 
