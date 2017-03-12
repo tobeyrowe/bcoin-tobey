@@ -33,7 +33,7 @@ pool.open().then(function() {
   pool.startSync();
 
   pool.on('tx', function(tx) {
-    wallet.addTX(tx);
+    walletdb.addTX(tx);
   });
 
   wallet.on('balance', function(balance) {
